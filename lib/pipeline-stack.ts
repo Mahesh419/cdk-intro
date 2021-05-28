@@ -17,10 +17,10 @@ export class DemoPipelineStack extends cdk.Stack {
             cloudAssemblyArtifact,
 
             sourceAction: new codepipeline_actions.GitHubSourceAction({
-                actionName: 'source', 
+                actionName: 'Github', 
                 output: sourceArtifact, 
                 oauthToken: SecretValue.secretsManager('github-token'),
-                owner: 'mahesh419',
+                owner: 'Mahesh419',
                 repo: 'cdk-intro', 
             }),
 
